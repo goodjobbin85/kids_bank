@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Student.delete_all
+
+Student.create!(
+  name: "paul",
+  email: "paul@gmail.com",
+  balance: 100.00,
+  allowance: 15.00
+)
+
+Student.create!(
+  name: "natalie",
+  email: "natalie@gmail.com",
+  balance: 100.00,
+  allowance: 12.00
+)
+
+Student.create!(
+  name: "katherine",
+  email: "katherine@gmail.com",
+  balance: 100.00,
+  allowance: 10.00
+)
