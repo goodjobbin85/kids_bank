@@ -4,7 +4,9 @@ class StudentsContainer extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <StudentsForm />
+      </div>
     );
   }
 
