@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 
 class StudentsForm extends Component {
+  state = {
+    name: '',
+    email: '',
+    allowance: '',
+    balance: ''
+  }
 
   render() {
     return (
+
       <div>
+      {/*
         <form onSubmit={this.handleSubmit}>
           <label>Name</label>
           <input type="text" value={this.state.name} onChange={this.handleChange} name="name" />
@@ -24,6 +32,7 @@ class StudentsForm extends Component {
 
           <input type="submit" value="Create New Student" />
         </form>
+        */}
       </div>
     );
   }
