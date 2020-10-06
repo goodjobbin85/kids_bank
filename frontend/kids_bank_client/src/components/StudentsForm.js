@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addStudent } from '../actions/studentsActions';
 
 class StudentsForm extends Component {
   state = {
@@ -6,6 +8,18 @@ class StudentsForm extends Component {
     email: '',
     allowance: '',
     balance: ''
+  }
+
+  handleChange = (event) => {
+    const { name, value } = event.target
+    this.setState({
+      [name]: value
+    })
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault()
+    this.props.addStudent(this.state)
   }
 
   render() {
@@ -36,4 +50,4 @@ class StudentsForm extends Component {
 
 }
 
-export default StudentsForm;
+export default connect(null, {addStudent})(StudentsForm);
