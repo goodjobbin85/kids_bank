@@ -5,7 +5,7 @@ export const fetchStudents = () => {
       .then(students => dispatch({ type: 'FETCH_STUDENTS', payload: students }))
   }
 }
-/*
+
 export const addStudent = (student) => {
   return dispatch => {
     fetch('http://127.0.0.1:3000/students', {
@@ -17,4 +17,3 @@ export const addStudent = (student) => {
     .then(student => dispatch({ type: 'ADD_STUDENT', payload: student }))
   }
 }
-*/
