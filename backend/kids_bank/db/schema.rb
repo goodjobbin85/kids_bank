@@ -10,13 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_02_170121) do
+ActiveRecord::Schema.define(version: 2020_10_07_192551) do
 
   create_table "students", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.decimal "balance"
     t.decimal "allowance"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.integer "student_id"
+    t.decimal "value"
+    t.boolean "is_complete?"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
