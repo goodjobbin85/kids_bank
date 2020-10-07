@@ -2,9 +2,10 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom'
 import Home from './Home';
 import About from './About'
-import StudentsList from './StudentsList'; 
+import StudentsList from './StudentsList';
+import StudentsContainer from './StudentsContainer';
 
-const Router = () => (
+const Router = () => {
   return (
     <Switch>
       <Route exact path='/' component={Home} />
@@ -13,6 +14,6 @@ const Router = () => (
     </Switch>
   )
 
-);
+};
 
 export default Router;

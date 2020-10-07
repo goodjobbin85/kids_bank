@@ -1,12 +1,11 @@
 import React from 'react';
-import StudentsContainer from './StudentsContainer'
-
+import Router from './Router'
 
 const App = () => {
   return (
     <div>
       <h1 align="center">Kids Bank</h1>
-      <StudentsContainer />
+      <Router />
     </div>
   )
 }
