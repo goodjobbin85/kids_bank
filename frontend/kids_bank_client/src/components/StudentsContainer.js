@@ -14,7 +14,7 @@ class StudentsContainer extends Component {
     return (
       <div>
         <StudentsForm />
-         { /*this.allStudents()*/ }
+        
       </div>
     );
   }
