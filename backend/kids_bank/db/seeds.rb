@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Student.delete_all
+
+Task.delete_all
 
 Student.create!(
   name: "paul",
@@ -26,4 +27,75 @@ Student.create!(
   email: "katherine@gmail.com",
   balance: 100.00,
   allowance: 10.00
+)
+
+Student.create!(
+  name: "Juniper",
+  email: "juniper@gmail.com",
+  balance: 100.00,
+  allowance: 10.00
+)
+
+Task.create!(
+  title: "20 minutes IXL",
+  description: "long division",
+  student_id: 8,
+  value: 1.00,
+  is_complete?: false
+)
+
+Task.create!(
+  title: "20 minutes reading",
+  description: "continue Lord of the Flies",
+  student_id: 8,
+  value: 2.00,
+  is_complete?: false
+)
+
+Task.create!(
+  title: "20 minutes IXL",
+  description: "long division",
+  student_id: 9,
+  value: 1.00,
+  is_complete?: false
+)
+
+Task.create!(
+  title: "20 minutes reading ",
+  description: "continue Lord of the Flies",
+  student_id: 9,
+  value: 1.00,
+  is_complete?: false
+)
+
+Task.create!(
+  title: "20 minutes IXL",
+  description: "long division",
+  student_id: 10,
+  value: 1.00,
+  is_complete?: false
+)
+
+Task.create!(
+  title: "20 minutes reading ",
+  description: "continue Lord of the Flies",
+  student_id: 10,
+  value: 1.00,
+  is_complete?: false
+)
+
+Task.create!(
+  title: "20 minutes IXL",
+  description: "long division",
+  student_id: 11,
+  value: 1.00,
+  is_complete?: false
+)
+
+Task.create!(
+  title: "20 minutes reading ",
+  description: "continue Lord of the Flies",
+  student_id: 11,
+  value: 1.00,
+  is_complete?: false
 )
