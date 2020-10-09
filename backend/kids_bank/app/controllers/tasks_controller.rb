@@ -3,7 +3,8 @@ class TasksController < ApplicationController
 
   # GET /tasks
   def index
-    @tasks = Task.all
+    @student = Student.find(params[:student_id])
+    @tasks = @student.tasks
 
     render json: @tasks
   end
