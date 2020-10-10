@@ -1,7 +1,7 @@
 import React from 'react';
-import Router from './Router';
-import StudentsContainer from './StudentsContainer' ;
-import StudentsList from './StudentsList';
+import Router from './components/Router';
+import StudentsContainer from './containers/StudentsContainer';
+import StudentsList from './components/StudentsList';
 
 const App = () => {
   return (

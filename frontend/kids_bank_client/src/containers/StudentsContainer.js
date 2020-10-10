@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import StudentsForm from './StudentsForm';
+import StudentsForm from '../components/StudentsForm';
 import { connect } from 'react-redux';
 import { fetchStudents } from '../actions/studentsActions';
-import Student from './Student';
+import Student from '../components/Student';
 
 class StudentsContainer extends Component {
   //allStudents = () => this.props.students.map((student, id) => <Student key={id} name={student.name} email={student.email} allowance={student.allowance} balance={student.balance} />)
@@ -14,7 +14,7 @@ class StudentsContainer extends Component {
     return (
       <div>
         <StudentsForm />
-        
+
       </div>
     );
   }

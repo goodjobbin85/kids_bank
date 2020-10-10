@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './Home';
 import About from './About'
 import StudentsList from './StudentsList';
-import StudentsContainer from './StudentsContainer';
+import StudentsContainer from '../containers/StudentsContainer';
 
 const Router = () => {
   return (
