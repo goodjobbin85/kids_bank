@@ -10,7 +10,6 @@ const Router = () => {
     <Switch>
       <Route exact path='/' component={Home} />
       <Route exact path='/about' component={About} />
-      <Route exact path='/students' component={StudentsList} />
     </Switch>
   )
 
