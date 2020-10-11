@@ -11,7 +11,6 @@ const Student = (props) => {
 
         <h1>Task Set</h1>
         <TasksContainer />
-        <TasksList />
       </div>
   )
 }
