@@ -15,10 +15,11 @@ class StudentsContainer extends Component {
     return (
       <div>
         { /* this works: <StudentsList students={this.props.students}/>*/ }
-        <Route exact path='/students/new' component={StudentsForm} />
-        <Route exact path='/students' render={(routerProps) => <StudentsList {...routerProps} students={this.props.students}/>} />
-        <Route exact path='/students/:id' render={(routerProps) => <Student {...routerProps} students={this.props.students}/>} />
-
+        <Switch>
+          <Route exact path='/students/new' component={StudentsForm} />
+          <Route exact path='/students' render={(routerProps) => <StudentsList {...routerProps} students={this.props.students}/>} />
+          <Route exact path='/students/:id' render={(routerProps) => <Student {...routerProps} students={this.props.students}/>} />
+        </Switch>
 
 
       </div>
