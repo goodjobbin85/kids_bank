@@ -12,7 +12,7 @@ class TasksController < ApplicationController
   # GET /tasks/1
   def show
     @student = Student.find(params[:student_id])
-    @task = @student.transactions.find_by(id: params[:id])
+    @task = @student.tasks.find_by(id: params[:id])
 
     render json: @task
   end
