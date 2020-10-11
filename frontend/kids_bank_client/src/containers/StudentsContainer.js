@@ -3,6 +3,7 @@ import StudentsForm from '../components/StudentsForm';
 import { connect } from 'react-redux';
 import { fetchStudents } from '../actions/studentsActions';
 import Student from '../components/Student';
+import StudentsList from '../components/StudentsList';
 
 class StudentsContainer extends Component {
   //allStudents = () => this.props.students.map((student, id) => <Student key={id} name={student.name} email={student.email} allowance={student.allowance} balance={student.balance} />)
@@ -13,6 +14,7 @@ class StudentsContainer extends Component {
   render() {
     return (
       <div>
+        { /* this works: <StudentsList students={this.props.students}/>*/ }
         <StudentsForm />
 
       </div>
@@ -27,4 +29,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(null, {fetchStudents})(StudentsContainer);
+export default connect(mapStateToProps, { fetchStudents })(StudentsContainer);

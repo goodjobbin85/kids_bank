@@ -20,6 +20,12 @@ class StudentsForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault()
     this.props.addStudent(this.state)
+    this.setState({
+      name: '',
+      email: '',
+      allowance: '',
+      balance: ''
+    })
   }
 
   render() {
