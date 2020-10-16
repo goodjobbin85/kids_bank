@@ -10,7 +10,7 @@ const Student = (props) => {
         <h3>Name: {student ? student.name : null } | Email: {student ? student.email : null }</h3>
 
         <h1>Task Set</h1>
-        <TasksContainer />
+        <TasksContainer student={student}/>
       </div>
   )
 }
