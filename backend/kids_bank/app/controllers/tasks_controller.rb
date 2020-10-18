@@ -23,7 +23,7 @@ class TasksController < ApplicationController
     @task = @student.tasks.new(task_params)
 
     if @task.save
-      render json: @student, status: :created, location: @task
+      render json: @student
     else
       render json: @task.errors, status: :unprocessable_entity
     end
