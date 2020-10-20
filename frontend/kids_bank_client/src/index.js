@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './components/Home';
+import NavBar from './components/NavBar';
 
 import App from './App'
 //import { rootReducer } from './reducers/rootReducer'
@@ -18,7 +20,9 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
     <Router>
+      <NavBar />
       <App />
+      <Home />
     </Router>
   </Provider>,
   document.getElementById('root')
