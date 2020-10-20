@@ -7,11 +7,11 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from './App'
-import { rootReducer } from './reducers/rootReducer'
+//import { rootReducer } from './reducers/rootReducer'
 import { studentsReducer } from './reducers/studentsReducer'
 
 const store = createStore(
-  rootReducer,
+  studentsReducer,
   composeWithDevTools(applyMiddleware(thunk))
 )
 

@@ -8,6 +8,7 @@ const Student = (props) => {
       <div align="center">
         <h1>Student Info</h1>
         <h3>Name: {student ? student.name : null } | Email: {student ? student.email : null }</h3>
+        <h2>Balance: {student ? student.balance : null }</h2>
 
         <h1>Task Set</h1>
         <TasksContainer student={student}/>
