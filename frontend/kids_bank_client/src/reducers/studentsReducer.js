@@ -1,9 +1,9 @@
-export const studentsReducer = (state = [], action) => {
+export function studentsReducer(state = { students: []} , action) {
   switch(action.type) {
     case 'FETCH_STUDENTS':
-      return action.payload
+      return { ...state, students: [...state.students, action.payload] }
     case 'ADD_STUDENT':
-      return [ ...state, action.payload]
+      return { ...state, students: [...state.students, action.payload] }
       //return { todos: state.todos.concat(action.payload.text) };
     default:
       return state;
