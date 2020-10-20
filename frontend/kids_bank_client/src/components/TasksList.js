@@ -13,7 +13,7 @@ const TasksList = (props) => {
       <div>
         <ul>
           {props.tasks && props.tasks.map(task =>
-            <li key={task ? task.id : null}>Task: {task ? task.title : null} | Task Description: {task ? task.description : null} | Task Value: ${task ? task.value : null} <button onClick={handleDelete}>Complete Task</button></li>
+            <li key={task.id}>Task: {task.title} | Task Description: {task.description} | Task Value: ${task.value} <button onClick={() => handleDelete(task)}>Complete Task</button></li>
           )}
         </ul>
       </div>

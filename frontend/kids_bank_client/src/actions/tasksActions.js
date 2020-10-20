@@ -14,10 +14,10 @@ export const addTask = (task, studentId) => {
 
 export const deleteTask = (taskId, studentId) => {
   return (dispatch) => {
-    return fetch(`http://localhost:3000/students/${studentId}/tasks/${taskId}`, {
+    fetch(`http://localhost:3000/students/${studentId}/tasks/${taskId}`, {
       method: 'DELETE'
     })
     .then(response => response.json())
-    .then(student => dispatch({type: 'DELETE_TASK', payload: student}))
+    .then(student => dispatch({type: 'DELETE_TASK', payload: student }))
   }
 }

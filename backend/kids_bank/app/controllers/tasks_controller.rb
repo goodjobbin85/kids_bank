@@ -40,7 +40,9 @@ class TasksController < ApplicationController
 
   # DELETE /tasks/1
   def destroy
+    @student = Student.find(@task.student_id)
     @task.destroy
+    render json: @student
   end
 
   private

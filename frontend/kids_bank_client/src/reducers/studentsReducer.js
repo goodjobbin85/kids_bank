@@ -15,12 +15,16 @@ export function studentsReducer(state = { students: []} , action) {
           return student
         }
       })
+      return { ...state, students: addedState }
     case 'DELETE_TASK':
       let newState = state.students.map(student => {
         if (student.id === action.payload.id) {
           return action.payload
+        } else {
+          return student
         }
       })
+      return { ...state, students: newState }
     default:
       return state;
   }
