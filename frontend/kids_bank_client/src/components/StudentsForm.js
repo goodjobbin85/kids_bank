@@ -30,25 +30,29 @@ class StudentsForm extends Component {
 
   render() {
     return (
-      <div>
+      <div align="center">
         <form onSubmit={this.handleSubmit}>
-          <label>Name</label>
-          <input type="text" value={this.state.name} onChange={this.handleChange} name="name" />
-          <br/>
+          <div className="form-group">
+            <label>Name</label>
+            <input type="text" value={this.state.name} onChange={this.handleChange} name="name" />
+          </div>
 
-          <label>Email</label>
-          <input type="email" value={this.state.email} onChange={this.handleChange} name="email" />
-          <br/>
+          <div className="form-group">
+            <label>Email</label>
+            <input type="email" value={this.state.email} onChange={this.handleChange} name="email" />
+          </div>
 
-          <label>Allowance</label>
-          <input type="text" value={this.state.allowance} onChange={this.handleChange} name="allowance" />
-          <br/>
+          <div className="form-group">
+            <label>Allowance</label>
+            <input type="text" value={this.state.allowance} onChange={this.handleChange} name="allowance" />
+          </div>
 
-          <label>Balance</label>
-          <input type="text" value={this.state.balance} onChange={this.handleChange} name="balance" />
-          <br/>
+          <div className="form-group">
+            <label>Balance</label>
+            <input type="text" value={this.state.balance} onChange={this.handleChange} name="balance" />
+          </div>
 
-          <input type="submit" value="Create New Student" />
+          <input type="submit" value="Create New Student" className="btn btn-primary"/>
         </form>
       </div>
     );

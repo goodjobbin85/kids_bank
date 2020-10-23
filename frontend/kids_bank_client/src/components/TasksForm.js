@@ -28,15 +28,21 @@ class TasksForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div align="center">
         <form onSubmit={this.handleSubmit}>
-          <label>Task Title</label>
-          <input type="text" name="title" value={this.state.title} onChange={this.handleChange} />
-          <label>Description</label>
-          <input type="text" name="description" value={this.state.description} onChange={this.handleChange} />
-          <label>Value</label>
-          <input type="text" name="value" value={this.state.value} onChange={this.handleChange} />
-          <input type="submit" />
+          <div className="form-group">
+            <label>Task Title</label>
+            <input type="text" name="title" value={this.state.title} onChange={this.handleChange} />
+          </div>
+          <div clasName="form-group">
+            <label>Description</label>
+            <input type="text" name="description" value={this.state.description} onChange={this.handleChange} />
+          </div>
+          <div className="form-group">
+            <label>Value</label>
+            <input type="text" name="value" value={this.state.value} onChange={this.handleChange} />
+          </div>
+          <input type="submit" className="btn btn-primary"/>
         </form>
       </div>
     );

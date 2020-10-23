@@ -6,6 +6,7 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App'
 //import { rootReducer } from './reducers/rootReducer'
