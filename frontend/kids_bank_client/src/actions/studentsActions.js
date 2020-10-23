@@ -2,7 +2,9 @@ export function fetchStudents() {
   return (dispatch) => {
     fetch('http://localhost:3000/students')
       .then(response => response.json())
-      .then(students => dispatch({ type: 'FETCH_STUDENTS', payload: students }))
+      .then(students => {
+        dispatch({ type: 'FETCH_STUDENTS', payload: students })
+      })
   }
 }
 

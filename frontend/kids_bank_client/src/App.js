@@ -1,7 +1,6 @@
 import React from 'react';
 import Router from './components/Router';
 import StudentsContainer from './containers/StudentsContainer';
-import StudentsList from './components/StudentsList';
 
 const App = () => {
   return (
